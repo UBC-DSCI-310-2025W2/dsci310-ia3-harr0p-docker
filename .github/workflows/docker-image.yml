@@ -43,8 +43,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-harr0p:${{ steps.ver.outputs.next }}
-            ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-harr0p:latest
+            ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-harr0p-docker:${{ steps.ver.outputs.next }}
+            ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-harr0p-docker:latest
 
       - name: Tag GitHub repo
         run: |
